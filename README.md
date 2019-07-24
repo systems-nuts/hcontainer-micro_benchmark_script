@@ -170,20 +170,3 @@ cd x86-64 ; make
 
 2. **(NEW UPDATE)** Latest popcorn-compiler will not have flash quit problem, so **while [ -z "$pid" ]** loop may delete( line 25 on sender and line 12 on receiver), the purpose of this loop is to make sure benchmark run successfully
 
-
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                                                                      
