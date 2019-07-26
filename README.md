@@ -45,9 +45,9 @@
 
 ## Pre-requisites
 
-1. CRIU branch crit-in-criu
+1. CRIU branch crit-in-criu. LINK: https://github.com/systems-nuts/criu.git
 
-2. CRIU branch heterogenous
+2. CRIU branch heterogenous. LINK: https://github.com/systems-nuts/criu.git
 
 3. Login as root
 
@@ -56,6 +56,8 @@
 5. Linux 4.15.0-45-generic
 
 6. Inorder to use script, target machines should have ssh public key to avoid password.
+
+7. Popcorn-compiler version criu. LINK: https://github.com/systems-nuts/popcorn-compiler.git
 
 ### SET UP SSH KEY
 - sudo su
