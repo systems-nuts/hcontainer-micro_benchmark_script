@@ -1,6 +1,6 @@
 # Micro Benchmark Tester
 
-## CONTENT SPECIFICATION
+## Contents
 
 1. caller 
 ```
@@ -57,7 +57,7 @@ $ git clone  https://github.com/systems-nuts/popcorn-compiler.git
 $ git checkout criu
 ```
 
-## ENVIORMENT SET UP FOR SCRIPT
+## Environment set up
 
 Create same work directory on both machines, path: /popcorn/brdw. 
 ```bash
@@ -66,7 +66,7 @@ cp benchmark/\* /popcorn/brdw
 cp caller /popcorn/brdw
 ```
 
-## SCRIPT INSTALL
+## Script installation
 
 - On aarch64 
 ```bash
@@ -77,20 +77,20 @@ cd aarch64 ; make
 cd x86-64 ; make
 ```
 
-## TEST
+## Test
 ```bash
 cd /popcorn/brdw/
 ./caller $sender_script $benchmark $targetmachine $args
 ```
 there are two $sender_script, depends on criu branch
 
-$benchmark is test binary, 
+1. $benchmark is test binary, 
 
-$targetmachine is tagetmachine user@ip or alias, 
+2. $targetmachine is tagetmachine user@ip or alias, 
 
-$args is for some binary _for example: ./popcorn-mm 4096_ 
+3. $args is for some binary _for example: ./popcorn-mm 4096_ 
 
-## EXAMPLE: 
+## Build: 
 
 ### Example for x86 to ARM, benchmark: popcorn-npb-is_c, CRIU: heterogeneous
 ```bash
@@ -157,7 +157,7 @@ cd popcorn/brdw/
 ```bash
 ./caller x86_arm_sender_antonio popcorn-mm sunsky 4096    
 ```
-## **!!!SCRIPT BUG!!!**
+## **Known bug**
 
 1. Depends on machine, when to greb the process id, the script could run in some case
 ```
